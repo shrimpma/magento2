@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  web:
+    image: alexcheng/magento2
+    ports:
+      - "8082:80"
+    volumes: 
+      - magento-data:/var/www/html  
+volumes:
+  magento-data: 
